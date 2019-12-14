@@ -4,7 +4,7 @@ Snoos Against Suicide is a Reddit bot that detects suicidal comments and respond
 
 ### Whenever someone comments something suicidal the bot flags it and comments the following text:
 
-> ## Snoos Against Suicide and its creator (u/srcircle) love you, here's some people that can help:
+> #### Snoos Against Suicide and its creator (u/srcircle) love you, here's some people that can help:
 >
 > Call 1-800-273-8255
 >
