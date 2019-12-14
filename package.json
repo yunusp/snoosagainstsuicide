@@ -1,28 +1,28 @@
 {
-  "name": "reddit-bot-example-node",
+  "name": "snoos-against-suicide",
   "version": "0.0.0",
-  "description": "An example of a Reddit bot that looks at new Reddit comments",
-  "main": "app.js",
-  "dependencies": {
-    "dotenv": "^4.0.0",
-    "snoostorm": "^0.0.5",
-    "snoowrap": "^1.14.1"
+  "description": "Reddit suicide prevention bot.",
+  "homepage": "https://snoosagainstsuicide.maxniederman.com/",
+  "bugs": {
+    "url": "https://github.com/max-niederman/snoosagainstsuicide/issues"
   },
-  "devDependencies": {
-    "eslint": "^4.1.1",
-    "eslint-config-google": "^0.8.0"
+  "license": "MIT",
+  "author": "Max Niederman",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-niederman/snoosagainstsuicide.git"
   },
   "scripts": {
     "start": "node app"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SyntonicApps/reddit-bot-example-node.git"
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "snoostorm": "0.0.5",
+    "snoowrap": "^1.20.1"
   },
-  "author": "Andrew Brooke",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SyntonicApps/reddit-bot-example-node/issues"
-  },
-  "homepage": "https://github.com/SyntonicApps/reddit-bot-example-node#readme"
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-google": "^0.8.0"
+  }
 }
