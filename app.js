@@ -31,7 +31,7 @@ const comments = client.CommentStream(streamOpts); // eslint-disable-line
 // Reply to comment
 comments.on('comment', (comment) => {
     const body = comment.body.replace("'", "").toLowerCase();
-    if (triggers.some(trigger => body.includes(trigger)) && body.length >= 700) {
+    if (triggers.some(trigger => body.includes(trigger)) && body.length <= 700) {
         comment.reply(replyMessage);
         console.log('Replied to u/' + comment.author.name);
     }
