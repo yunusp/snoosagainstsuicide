@@ -33,7 +33,7 @@ comments.on('comment', (comment) => {
     const body = comment.body.replace("'", "").toLowerCase();
     if (triggers.some(trigger => body.includes(trigger)) && body.length < 700) {
         comment.reply(replyMessage);
-        fs.appendFileSync('log.txt', '\nReplied to u/' + comment.author.name + ' at ' + Date.now().toUTCString());
+        fs.appendFileSync('log.txt', '\nReplied to u/' + comment.author.name + ' at ' + Date.now().toLocaleString());
         console.log('Replied to u/' + comment.author.name);
     }
 });
