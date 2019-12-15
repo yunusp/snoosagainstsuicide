@@ -12,4 +12,4 @@
 	* Trans Lifeline: 1-877-565-8860
 
 This message was automatically sent due to the detection of possibly suicidal language
-[source](https://github.com/max-niederman/snoosagainstsuicide) | [contact](https://www.reddit.com/message/compose/?to=srcircle)
+[source](https://github.com/max-niederman/snoosagainstsuicide) | [contact](https://www.reddit.com/message/compose/?to=srcircle) | [about](http://snoosagainstsuicide.maxniederman.com)
