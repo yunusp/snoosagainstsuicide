@@ -1,11 +1,16 @@
 require('dotenv').config();
+const fs = require('fs');
 
 const Snoowrap = require('snoowrap');
 const Snoostorm = require('snoostorm');
 
+// Get bot triggers and reply
+const triggers = JSON.parse(fs.readFileSync("triggers.json"));
+const replyMessage = fs.readFileSync("reply.md");
+
 // Build Snoowrap and Snoostorm clients
 const r = new Snoowrap({
-    userAgent: 'reddit-bot-example-node',
+    userAgent: 'nodejs:com.maxniederman.snoosagainstsuicide:v0.1.0 (by /u/srcircle)',
     clientId: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     username: process.env.REDDIT_USER,
@@ -16,15 +21,18 @@ const client = new Snoostorm(r);
 // Configure options for stream: subreddit & results per query
 const streamOpts = {
     subreddit: 'all',
-    results: 25
+    results: 200,
+    pollTime: 2000
 };
 
 // Create a Snoostorm CommentStream with the specified options
 const comments = client.CommentStream(streamOpts); // eslint-disable-line
 
-// On comment, perform whatever logic you want to do
+// Reply to comment
 comments.on('comment', (comment) => {
-    if (comment.body === ':(') {
-        comment.reply(':)');
+    const body = comment.body.replace("'", "").toLowerCase();
+    if (triggers.some(trigger => body.includes(trigger))) {
+        comment.reply(replyMessage);
+        console.log('Replied to u/' + comment.author.name);
     }
 });
