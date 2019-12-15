@@ -21,7 +21,7 @@ const client = new Snoostorm(r);
 // Configure options for stream: subreddit & results per query
 const streamOpts = {
     subreddit: 'all',
-    results: 150,
+    results: 200,
     pollTime: 2000
 };
 
