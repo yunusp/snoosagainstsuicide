@@ -18,3 +18,4 @@ International:
 
 This message was automatically sent due to the detection of possibly suicidal language
 [source](https://github.com/max-niederman/snoosagainstsuicide) | [contact](https://www.reddit.com/message/compose/?to=srcircle) | [about](http://snoosagainstsuicide.maxniederman.com)
+P.S. Ignore me completely if there was no suicidal intent or it was just a joke.
