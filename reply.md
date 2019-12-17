@@ -1,4 +1,4 @@
-#### Snoos Against Suicide and its creator love you. Suicide is **NEVER** the answer, getting help is the answer.
+#### Snoos Against Suicide and its creator love you. If Jeffrey Epstein didn't kill himself, neither should you. Suicide is **NEVER** the answer, getting help is the answer.
 
 #### Here are some people who can help:
 
