@@ -10,7 +10,7 @@ const replyMessage = fs.readFileSync("reply.md");
 
 // Build Snoowrap and Snoostorm clients
 const r = new Snoowrap({
-    userAgent: 'nodejs:com.maxniederman.snoosagainstsuicide:v0.1.0 (by /u/srcircle)',
+    userAgent: 'nodejs:com.maxniederman.snoosagainstsuicide:v0.1.5 (by /u/srcircle)',
     clientId: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     username: process.env.REDDIT_USER,
